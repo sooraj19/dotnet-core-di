@@ -4,13 +4,13 @@ using System.Text;
 
 namespace CalculatorWithDI
 {
-    class CalculatorConsumer
+    public class Consumer
     {
         private ICalculator _calculator;
 
-        public CalculatorConsumer(ICalculator calculatorIstance)
+        public Consumer(ICalculator calculator)
         {
-            _calculator = calculatorIstance;
+            _calculator = calculator;
         }
 
         public int ConsumerAdd(int num1, int num2)
